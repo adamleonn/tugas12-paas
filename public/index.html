@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas 12 PaaS</title>
+</head>
+<body>
+  <h1>Tugas 12 PaaS</h1>
+  <p>Aplikasi sederhana ini berjalan menggunakan layanan PaaS.</p>
+  <p><b>Provider:</b> Vercel</p>
+  <p><b>Model Layanan:</b> Platform as a Service</p>
+  <p><b>Runtime:</b> Serverless Function</p>
+
+  <button onclick="cekStatus()">Cek Status API</button>
+  <pre id="hasil">Klik tombol untuk melihat response API.</pre>
+
+  <script>
+    async function cekStatus() {
+      const response = await fetch("/api/status");
+      const data = await response.json();
+      document.getElementById("hasil").textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>

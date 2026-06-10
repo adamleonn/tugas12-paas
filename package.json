@@ -1,16 +1,8 @@
 {
   "name": "tugas12-paas",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Aplikasi sederhana untuk Tugas 12 PaaS",
   "scripts": {
-  "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.2.1"
+    "start": "vercel dev"
   }
 }
